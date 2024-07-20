@@ -1,0 +1,185 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: midnightblue;
+    width: 100%;
+}
+.logwrapper{
+    background: #000;
+    margin: 1.5%;
+    padding: 10ppx;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.header{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    border-bottom: 7px solid maroon;
+    padding: 0px 40px;
+    line-height: 70px;
+}
+.logo{
+    font-size: 2rem;
+    background: rgb(182, 105, 156);
+    color: maroon;
+    border-radius: 60px; 
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    line-height: 60px;
+    width: 150px;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    
+    
+}
+.nav ul li{
+    display: flex;
+    position: relative;
+    margin-left: 10px;
+    background: dodgerblue;
+    width: 80px;
+    text-transform: capitalize;
+    line-height: 40px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.nav ul li :hover{
+    background-color: #46527a;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: lightsteel0blue;
+    display: block;
+}
+
+
+.nav > ul > li > ul{
+    position: absolute;
+    display: none;
+    border-radius: 0px 0px 4px 4px;
+    
+}
+.nav ul li ul li{
+    line-height: 30px;
+    width: 150px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    
+}
+
+.nav ul li ul li a{
+    padding: 10px 16px;
+    text-decoration: none; 
+}
+
+.nav ul li:hover ul{
+    display: block;
+top:32pt;}
+
+.nav ul li ul li a:hover{
+    background: dodgerblue;
+}
+
+.characters h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: blue;
+}
+.characters p{
+    color: bisque;
+}
+.container{
+    background: darkred;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    border-bottom: 4px solid rgb(2, 14, 56);
+}
+.container img{
+    width: 100%;
+}
+.container h3{
+    text-align: justify;
+}
+.minhead{
+   justify-content: center;
+   align-items: center;
+   margin: 0; 
+    color: aqua;
+}
+.footer{
+ background: grey; 
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+
+}
+
+header{
+    text-transform: capitalize;
+    color: #fff;
+}
+
+
+.boss ul{
+    float: right;
+}
+.boss ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.boss ul li a{
+    font-size: 1.5rem;
+    padding: 0px 15px;
+    text-decoration: none  ;
+    display: block;
+    color: lightskyblue;
+}
+
+.boss ul li a:hover{
+    background-color: #46527a;
+}
+.boss ul li ul{
+    position: absolute;
+    display: none;
+    background: #2a375e;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.boss ul li ul li{
+    line-height: 2;
+    width: 185px;
+    border-radius: 5px;   
+    padding: 6px; 
+}
+
+.boss ul li:hover ul{
+    display: block;
+}
+
+.boss ul li ul li a{
+    padding: 8px 14px;
+}
+
+.boss ul li ul li a:hover{
+    background-color: #46527a;
+}
